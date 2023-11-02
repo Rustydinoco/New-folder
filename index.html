@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter Your City" spellcheck="false" />
-            <button class='bx bx-search'></button>
-        </div>
-        <div class="weather-icon">
-            <img src="image/sunny.png" class="weather-icon">
-            <p class="temperature">23 <span>°C</span></p>
-            <p class="description">Jakarta</p>
-        </div>
+      <div class="search">
+        <input type="text" placeholder="Enter Your City" spellcheck="false" />
+        <button class="bx bx-search"></button>
+      </div>
+    <div class="error">
+        <p>Invalid City Name</p>
+    </div>
+      <div class="weather-icon">
+        <img src="image/sunny.png" class="weather-img" />
+        <p class="temperature">23 <span>°C</span></p>
+        <p class="description">Jakarta</p>
 
         <div class="weather-info">
-            <div class="humid">
-                <i class='bx bx-water'></i>
-                <div class="humid-text">
-                    <div class="humid-info">
-                        <p class="humidity"></p>
-                    </div>
-                    <p>Humidity</p>
-                </div>
+          <div class="humid">
+            <i class="bx bx-water"></i>
+            <div class="humid-text">
+              <div class="humid-info">
+                <p class="humidity"></p>
+              </div>
+              <p>Humidity</p>
             </div>
-
-            <div class="wind">
-                <i class='bx bx-wind'></i>
-                <div class="wind-text">
-                    <div class="wind-info">
-                        <p class="wind2"></p>
-                    </div>
-                    <p>Wind</p>
-                </div>
+          </div>
+          <div class="wind">
+            <i class="bx bx-wind"></i>
+            <div class="wind-text">
+              <div class="wind-info">
+                <p class="wind2"></p>
+              </div>
+              <p>Wind</p>
             </div>
+          </div>
         </div>
-
-        
+      </div>
     </div>
-
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
